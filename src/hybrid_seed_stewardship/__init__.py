@@ -1,1 +1,66 @@
-"""领域资料读取接口。"""
+"""领域资料读取与追溯服务接口。"""
+
+from .domain import load_domain
+from .index import IndexOffice, IndexRules
+from .model import (
+    EventType,
+    FieldInspection,
+    GateFailure,
+    Inspection,
+    IsolationZone,
+    Lot,
+    MaterialEvent,
+    Package,
+    Plot,
+    PublishedIndex,
+    Quotation,
+    QuoteDecision,
+    Release,
+    ReleaseCorrection,
+    Role,
+    SeedContract,
+    StewardGrade,
+    StewardQualification,
+    User,
+    VarietyFiling,
+)
+from .service import (
+    AuthorizationError,
+    ConflictError,
+    ConservationError,
+    DomainError,
+    StateError,
+    StewardshipService,
+)
+
+__all__ = [
+    "load_domain",
+    "IndexOffice",
+    "IndexRules",
+    "StewardshipService",
+    "AuthorizationError",
+    "ConflictError",
+    "ConservationError",
+    "DomainError",
+    "StateError",
+    "Role",
+    "StewardGrade",
+    "EventType",
+    "User",
+    "StewardQualification",
+    "VarietyFiling",
+    "IsolationZone",
+    "Plot",
+    "FieldInspection",
+    "SeedContract",
+    "MaterialEvent",
+    "Inspection",
+    "Release",
+    "ReleaseCorrection",
+    "Lot",
+    "Package",
+    "Quotation",
+    "QuoteDecision",
+    "GateFailure",
+    "PublishedIndex",
+]
